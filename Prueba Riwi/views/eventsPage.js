@@ -1,20 +1,18 @@
-import { afterRender } from "./login"
-
 export function render() {
     return `
         <main class="container">
             <section class="row vh-100">
                 <div class="col-xs-12 col-md-3 bg-secondary">
                     <h1 class="text-light">Events</h1>
-                    <div>
-                        <h2 class="text-light">Welcome user</h2>
+                    <div id="welcomeMessage">
+                       <h2 class="text-light">Welcome</h2>
                     </div>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link active text-light" href="#">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Enrollments</a>
+                            <a class="nav-link text-light" href="#/usersEvents">Enrollments</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#">Logout</a>
@@ -30,7 +28,6 @@ export function render() {
                             <th scope="col">Capacity</th>
                             <th scope="col">Date</th>
                             <th scope="col">State</th>
-                        
                         </tr>
                     </thead>
                     <tbody id="tableContent">
@@ -51,7 +48,6 @@ export function afterRender() {
     } else {
         //DEFINE ALL CONST AND VARIABLES THAT'LL BE USED
         const tableContent = document.getElementById("tableContent");
-        const container = document.getElementById("container");
         const URL_db = "http://localhost:3000/";
         //GET EVENTS INFORMATION
         async function getEvents() {
@@ -100,6 +96,7 @@ export function afterRender() {
             //EVENT TO ENROLL TO A CONCERT
             const dataUsers = await getUsers();
             const enrollBtn = document.querySelectorAll(".btn");
+            const container = document.getElementById("welcomeMessage");
             console.log(enrollBtn);
             enrollBtn.forEach(btn => {
                 btn.addEventListener("click", async (event) => {

@@ -1,8 +1,8 @@
-// import {renderRoute} from '../router.js';
+import {renderRoute} from '../router.js';
 
-// const container = document.getElementById("container");
+const container = document.getElementById("container");
 
-// const handleRoute = () => renderRoute(location.hash, container);
+const handleRoute = () => renderRoute(location.hash, container);
 
-// window.addEventListener("hashchange", handleRoute);
-// window.addEventListener("DOMContentLoaded", handleRoute);
+window.addEventListener("hashchange", handleRoute);
+window.addEventListener("DOMContentLoaded", handleRoute);
