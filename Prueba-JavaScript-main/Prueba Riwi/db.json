@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "username": "Juan David Barrera Patiño",
+      "email": "barrera.juanda7@gmail.com",
+      "password": "password123",
+      "role": "admin",
+      "id": "47l8"
+    },
+    {
+      "id": "b9e6",
+      "username": "Mario",
+      "email": "mario@gmail.com",
+      "password": "123",
+      "role": "visitor",
+      "events": [
+        "Guns n' Roses' concert",
+        "Maluma's concert",
+        "My Chemical Romance's concert",
+        "The Stroke's concert"
+      ]
+    },
+    {
+      "id": "fce1",
+      "username": "Felipe",
+      "email": "felipe@gmail.com",
+      "password": "12345",
+      "role": "visitor",
+      "events": [
+        "Maluma's concert"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "name": "Maluma's concert",
+      "description": "The Pretty boy in the house",
+      "capacity": 19,
+      "date": "05-Dec, 2025",
+      "status": "available"
+    },
+    {
+      "name": "Guns n' Roses' concert",
+      "description": "You can't miss this legendary band",
+      "capacity": 19,
+      "date": "15-Sep, 2025",
+      "status": "available"
+    },
+    {
+      "name": "My Chemical Romance's concert",
+      "description": "Emo's never dead!",
+      "capacity": 19,
+      "date": "13-Nov, 2025",
+      "status": "available"
+    },
+    {
+      "name": "Bad Bunny's concert",
+      "description": "Unforgettable experience",
+      "capacity": 20,
+      "date": "16-Jan, 2026",
+      "status": "available"
+    },
+    {
+      "name": "The Stroke's concert",
+      "description": "Best alternative rock band of this century",
+      "capacity": 19,
+      "date": "07-Feb, 2026",
+      "status": "available",
+      "id": "01yu"
+    }
+  ]
+}
