@@ -26,7 +26,9 @@
       "email": "felipe@gmail.com",
       "password": "12345",
       "role": "visitor",
-      "events": []
+      "events": [
+        "Maluma's concert"
+      ]
     }
   ],
   "events": [

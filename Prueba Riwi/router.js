@@ -3,7 +3,8 @@ const routes = {
     '/' : () => import('./views/eventsPage.js'),
     '/login' : () => import ('./views/login.js'),
     '/register' : () => import ('./views/register.js'),
-    '/usersEvents' : () => import ('./views/usersEvents.js')
+    '/usersEvents' : () => import ('./views/usersEvents.js'),
+    '/dashboard' : () => import ('./views/dashboard.js')
 }
 //takes information from routes elements, stores path inside a module so you can access to functions stored in each view (render(html), afterRender(js))
 export async function renderRoute(hash, container) {

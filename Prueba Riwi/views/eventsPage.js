@@ -96,7 +96,6 @@ export function afterRender() {
             //EVENT TO ENROLL TO A CONCERT
             const dataUsers = await getUsers();
             const enrollBtn = document.querySelectorAll(".btn");
-            const container = document.getElementById("welcomeMessage");
             console.log(enrollBtn);
             enrollBtn.forEach(btn => {
                 btn.addEventListener("click", async (event) => {
